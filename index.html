@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Javascript test</title>
+</head>
+
+<body>
+    <div id="frontpage" class="frontpage">
+        <img src="/images/Screenshot 2023-01-26 110942.png" alt="javascript tester">
+        <div id="prevresponse"></div>
+        <button class="teststartbutton" onclick="teststartbutton()" type="button">Start test</button>
+    </div>
+    <div id="time" class="invisible"></div>
+    <div id="quespage1" class="invisible">
+        <h3>1. What is difference between “ == “ and “ === “ operators?</h3>
+        <div>
+            <input type="radio" name="size" value=false id="a1">
+            <label for="a1">
+                <p><b>a. </b>Both are same operators. The difference between both the operators is that “==” is used to compare
+                    values whereas, “ === “ is used to compare only types.</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="b1">
+            <label for="b1">
+                <p><b>b. </b>“ == “ and “ === “ are same operators</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=true id="c1">
+            <label for="c1">
+                <p><b>c. </b>Both are comparison operators. The difference between both the operators is that “==” is used to
+                    compare
+                    values whereas, “ === “ is used to compare both values and types.</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="d1">
+            <label for="d1">
+                <p><b>d. </b> “ == “ is older standard and “ === “ is defined in ES6</p>
+            </label>
+        </div>
+        <p>
+            <button type="button" id="btn1" >Save and next</button>
+        </p>
+    </div>
+    <div id="quespage2" class="invisible">
+        <h3>2. pick the wrong one.</h3>
+        <div>
+            <input type="radio" name="size" value=true id="a2">
+            <label for="a2">
+                <p><b>a. </b> When a number is added to a string, the string type is always converted to the number
+                    type.</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="b2">
+            <label for="b2">
+                <p><b>b. </b> “==” is used to compare
+                    values whereas, “ === “ is used to compare both values and types.</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="c2">
+            <label for="c2">
+                <p><b>c. </b> All the variables and functions declared inside a function, can be accessed from within
+                    the
+                    function and not outside of it.</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="d2">
+            <label for="d2">
+                <p><b>d. </b> The keyword 'Var' has a global scope.</p>
+            </label>
+        </div>
+        <p2>
+            <button type="button" id="btn2">Save and next</button>
+        </p2>
+    </div>
+    <div id="quespage3" class="invisible">
+        <h3>3. What signifies the difference between Java and JavaScript?</h3>
+        <div>
+            <input type="radio" name="size" value=false id="a3">
+            <label for="a3">
+                <p><b>a. </b>JavaScript code can run <b>only</b> in the browser and Java can be run everywhere</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=true id="b3">
+            <label for="b3">
+                <p><b>b. </b>Java creates applications that can run in any virtual machine (JVM) or browser while
+                    JavaScript was
+                    made as a programming language to make web pages interactive.</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="c3">
+            <label for="c3">
+                <p><b>c. </b>javascript is a part of java to make web apps</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="d3">
+            <label for="d3">
+                <p><b>d. </b>i dont know, please let me google it</p>
+            </label>
+        </div>
+        <p>
+            <button type="button" id="btn3">Save and next</button>
+        </p>
+    </div>
+    <div id="quespage4" class="invisible">
+        <h3>4. Which can used to access HTML elements using Javascript?</h3>
+        <div>
+            <input type="radio" name="size" value=false id="a4">
+            <label for="a4">
+                <p><b>a. </b> getElementByID()</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="b4">
+            <label for="b4">
+                <p><b>b. </b> getElementByid()</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="c4">
+            <label for="c4">
+                <p><b>c. </b> getElementByClassName()</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=true id="d4">
+            <label for="d4">
+                <p><b>d. </b> a and c both</p>
+            </label>
+        </div>
+        <p>
+            <button type="button" id="btn4">Save and next</button>
+        </p>
+    </div>
+    <div id="quespage5" class="invisible">
+        <h3>5. What will be the output of the following code snippet?
+
+            var a = "Scaler";
+            var result = a.substring(2, 4);
+            document.write(result);
+        </h3>
+        <div>
+            <input type="radio" name="size" value=false id="a5">
+            <label for="a5">
+                <p><b>a. </b> calculate by your self, i can't do it</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="b5">
+            <label for="b5">
+                <p><b>b. </b> cal</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=false id="c5">
+            <label for="c5">
+                <p><b>c. </b> ali</p>
+            </label>
+        </div>
+        <div>
+            <input type="radio" name="size" value=true id="d5">
+            <label for="d5">
+                <p><b>d. </b> al</p>
+            </label>
+        </div>
+        <p>
+            <button type="button" id="btn5">Final Submit</button>
+        </p>
+    </div>
+    <div id="resultpage" class="invisible">
+        <h1>result page</h1>
+        <img src="/images/Screenshot 2023-01-26 110942.png" alt="javascript tester">
+        <div id="blankmarksheet"></div>
+        <button class="teststartbutton" onclick="retry()" type="button">
+            << Retry</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
